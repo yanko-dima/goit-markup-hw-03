@@ -1,0 +1,31 @@
+:root {
+  --mainColor: #2196f3;
+}
+
+body {
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header section  */
+.page-header {
+  width: 100%;
+  background-color: #ececec;
+}
+
+.page-header li:hoover
+
+/* Logo link */
+.logo {
+  font-size: 26px;
+  line-height: 30.52px;
+}
+
+.sine-nav {
+}
+
+.auth-nav {
+}
