@@ -20,10 +20,11 @@
   --secondFont: "Raleway";
 }
 
+/* Site styles */
 body {
   color: var(--mainGray);
   background-color: var(--mainBg);
-  font-family: var(--mainFont);
+  font-family: var(--mainFont), "Arial", sans-serif;
 }
 
 .list {
@@ -52,7 +53,9 @@ body {
 .header-auth .link:hover,
 .header-auth .link:focus,
 .footer-info .link:hover,
-.footer-info .link:focus {
+.footer-info .link:focus,
+.footer-adress-link:hover,
+.footer-adress-link:focus {
   color: var(--mainBlue);
 }
 
@@ -190,6 +193,10 @@ body {
   background-color: var(--darkBg);
 }
 
+.adress-block {
+  font-style: normal;
+}
+
 .footer-logo {
   text-decoration: none;
   font-family: var(--secondFont);
@@ -254,7 +261,7 @@ body {
 }
 
 .btn-tab:hover,
-.btn-tab:active {
+.btn-tab:focus {
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
