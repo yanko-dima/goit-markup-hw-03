@@ -4,13 +4,21 @@
   --mainBlue: #2196f3;
   --mainGray: #757575;
   --mainBlack: #212121;
+
+  /* Bachgraund colors */
   --mainBg: #ffffff;
   --secondBg: #f5f4fa;
+  --darkBg: #2f303a;
+
+  /* Font family */
+  --mainFont: "Roboto";
+  --secondFont: "Raleway";
 }
 
 body {
   color: var(--mainGray);
   background-color: var(--mainBg);
+  font-family: var(--mainFont);
 }
 
 .list {
@@ -25,6 +33,11 @@ body {
 }
 
 .section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
   color: var(--mainBlack);
 }
 
@@ -46,10 +59,10 @@ body {
 /* Logo */
 .header-logo {
   text-decoration: none;
-  font-style: normal;
-  font-weight: bold;
+  font-family: var(--secondFont);
+  font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2;
   color: var(--mainBlue);
   letter-spacing: 0.03em;
 }
@@ -58,15 +71,13 @@ body {
   color: #000000;
 }
 
-/* Site Nav block */
 .header-nav {
 }
 
 .header-nav .link {
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--mainBlack);
 }
@@ -75,29 +86,28 @@ body {
   color: var(--mainBlue);
 }
 
-/* Auth block */
 .header-auth {
 }
 
 .header-auth .link {
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--mainGray);
 }
 
+/* Main section home page */
+
 /* Hero section */
-.hero-section {
-  background-color: #2f303a;
+.hero {
+  background-color: var(--darkBg);
 }
 
 .hero-title {
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.4;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -106,10 +116,10 @@ body {
 
 .btn {
   cursor: pointer;
-  font-style: normal;
+  font-family: var(--mainFont);
   font-weight: bold;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.9;
   display: flex;
   align-items: center;
   text-align: center;
@@ -124,17 +134,62 @@ body {
   border-radius: 4px;
 }
 
+/* Features section */
+.features-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--mainBlack);
+}
+
+.fetures-text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+/* What are we doing section */
+
+/* Team section */
+.team {
+  background-color: var(--secondBg);
+}
+.team-item {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--mainBlack);
+}
+
+.team-text {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
 /* Footer section */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--darkBg);
 }
 
 .footer-logo {
   text-decoration: none;
-  font-style: normal;
-  font-weight: bold;
+  font-family: var(--secondFont);
+  font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--mainBlue);
 }
@@ -145,7 +200,6 @@ body {
 
 .footer-adress-link {
   text-decoration: none;
-  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -153,10 +207,10 @@ body {
 }
 
 .footer-info .link {
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgb(255, 255, 255, 0.6);
 }
+
+/* Main section portfolio */
