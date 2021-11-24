@@ -129,6 +129,7 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  border: 0;
   border-radius: 4px;
 }
 
@@ -239,6 +240,8 @@ body {
 }
 
 .btn-tab {
+  cursor: pointer;
+  font-family: var(--mainFont);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -246,6 +249,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--mainBlack);
   background-color: var(--secondBg);
+  border: 0;
   border-radius: 4px;
 }
 
