@@ -1,3 +1,3 @@
-# goit-markup-hw-02
+# goit-markup-hw-03
 https://dima311.github.io/goit-markup-hw-02/
 # Second home work in GoiT - html leyaut and css text styles
