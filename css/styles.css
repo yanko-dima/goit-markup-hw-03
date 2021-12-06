@@ -330,7 +330,42 @@ body {
 
 /* Main section portfolio */
 .portfolio-tab-list {
+  display: flex;
+  justify-content: center;
   margin: 0 0 50px 0;
+}
+
+.portfolio-tab-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.btn-tab {
+  padding: 6px 22px;
+  border: 0;
+  border-radius: 4px;
+
+  cursor: pointer;
+  font-family: var(--mainFont);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--mainBlack);
+  background-color: var(--secondBg);
+}
+
+.btn-tab:hover,
+.btn-tab:focus {
+  color: var(--mainWhite);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  background-color: var(--mainBlue);
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .portfolio-item {
@@ -367,26 +402,4 @@ body {
   line-height: 1.9;
   margin: 0;
   padding: 0 0 0 24px;
-}
-
-.btn-tab {
-  cursor: pointer;
-  font-family: var(--mainFont);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: center;
-  color: var(--mainBlack);
-  background-color: var(--secondBg);
-  padding: 6px 22px;
-  border: 0;
-  border-radius: 4px;
-}
-
-.btn-tab:hover,
-.btn-tab:focus {
-  color: var(--mainWhite);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  background-color: var(--mainBlue);
 }
